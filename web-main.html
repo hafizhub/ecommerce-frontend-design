@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>E-Commerce Web Design</title>
+    <style>
+        .category-item:hover {
+            background-color: #e6f0e8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #e6f0e8;">
+    <!-- Header section -->
+    <section class="border-bottom pt-3 pb-3 bg-white">
+        <header class="container">
+            <section class="row">
+                <section class="col-2">
+                    <section class="web-icon text-primary">
+                        <h2 class="h2"><i class="fa-solid fa-bag-shopping"></i> BRAND</h2>
+                    </section>
+                </section>
+                <section class="col-md-7">
+                    <section class="search-sec">
+                        <div class="input-group border border-primary border-2 rounded-3">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Search">
+                                <select class="" style="border: none;"><option value="">All category</option></select>
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+                    </section>
+                </section>
+                <section class="col-3">
+                    <section class="head-nav d-flex justify-content-end gap-3 text-secondary">
+                        <div class="p-1 rounded-3 category-item icons d-flex flex-column justify-content-center align-items-center "><i
+                                class="fa-solid fa-user icon"></i>Profile
+                        </div>
+                        <div class="p-1 rounded-3 category-item icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-message icon"></i>Messages</div>
+                        <div class="p-1 rounded-3 category-item icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-heart icon"></i>Order
+                        </div>
+                        <div id="myCart" class="p-1 rounded-3 category-item icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-cart-shopping icon"></i>My Cart
+                        </div>
+                    </section>
+
+                </section>
+            </section>
+        </header>
+    </section>
+    <nav class="border-bottom pt-3 bg-white">
+        <section class="container d-flex justify-content-between fw-semibold">
+            <section class="nav container gap-4">
+                <p><i class="fa-solid fa-bars"></i> All category</p>
+                <a href="#" class="text-decoration-none text-black">Hot offers</a>
+                <a href="#" class="text-decoration-none text-black">Gift boxes</a>
+                <a href="#" class="text-decoration-none text-black">Projects</a>
+                <a href="#" class="text-decoration-none text-black">Menu items</a>
+                <p class="dropdown-toggle">Help</p>
+            </section>
+            <section class="d-flex gap-4">
+                <p class="dropdown-toggle">English, USD</p>
+                <p class="dropdown-toggle">Ship to GM</p>
+            </section>
+        </section>
+    </nav>
+
+    <!-- Main section -->
+    <main class="container">
+        <section class="row border mt-4 mb-4 pt-3 pb-3 rounded-3 bg-white">
+            <section class="col-3">
+                <div>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Automobiles</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Colthes and wear</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Home interior</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Computer and tech</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Tools, equipment</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Sportss and outdoor</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Animal and pets</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">Machinery tools</p>
+                    <p class="p-2 ms-0 m-1 rounded-2 fw-semibold category-item">More category</p>
+                </div>
+            </section>
+            <section class="col-7">
+                <img src="assets/extra-images/main.avif" style="height: 400px; width: 100%;" alt="">
+            </section>
+            <section class="col-2 rounded-3">
+                <section class="row m-0 p-2 border rounded-3" style="background-color: #e6f0e8;">
+                    <div class="d-flex p-0 align-items-center">
+                        <div><i class="fa-solid fa-circle-user fs-1"></i></div>
+                        <p class="m-0">Hi, User <span class="d-block">let's get Started</span></p>
+                    </div>
+                    <div class="row justify-content-center m-0 mt-2 gap-2">
+                        <button class="btn btn-primary">Join now</button>
+                        <button class="btn btn-outline-primary">Sign in</button>
+                    </div>
+                </section>
+                <section class="row border m-0 mt-3 rounded-3" style="background-color: orange;">
+                    <p class="text-white m-0 p-3">Get us 10$ Off <span class="d-block">wth a new </span><span
+                            class="d-block">supplier</span></p>
+                </section>
+                <section class="row border m-0 mt-3 rounded-3" style="background-color: rgb(86, 152, 179);">
+                    <p class="text-white m-0 p-3">Send quotes with <span class="d-block">supplier </span><span
+                            class="d-block">preferences</span></p>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <!-- Deals and offer -->
+    <section class="container mt-3 ">
+        <section class="row border rounded-3 bg-white">
+            <section class="col-auto p-4 border-end">
+                <p class="fw-bold mb-0 fs-5">Deals and offers</p>
+                <p class="text-secondary">Hygiene equipment</p>
+                <section class="d-flex">
+                    <p class="m-0 me-2 p-2 bg-secondary text-white text-center rounded-3"><span
+                            class="d-block fw-semibold">04 </span><span>Day</span></p>
+                    <p class="m-0 me-2 p-2 bg-secondary text-white text-center rounded-3"><span
+                            class="d-block fw-semibold">13 </span><span>Hour</span></p>
+                    <p class="m-0 me-2 p-2 bg-secondary text-white text-center rounded-3"><span
+                            class="d-block fw-semibold">34 </span><span>Min</span></p>
+                    <p class="m-0 me-2 p-2 bg-secondary text-white text-center rounded-3"><span
+                            class="d-block fw-semibold">56 </span><span>Sec</span></p>
+                </section>
+            </section>
+            <section class="col-2 p-4 border-end">
+                <img src="assets/tech/8.jpg" height="150" class="d-block" alt="">
+                <p class="text-center">Smart Watches</p>
+                <p class="text-center"><span
+                        class="text-danger rounded-pill bg-danger-subtle ps-3 pe-3 fw-semibold">-25%</span></p>
+            </section>
+            <section class="col-auto p-4 border-end">
+                <img src="assets/tech/7.jpg" height="150" class="d-block" alt="">
+                <p class="text-center">Laptops</p>
+                <p class="text-center"><span
+                        class="text-danger rounded-pill bg-danger-subtle ps-3 pe-3 fw-semibold">-15%</span></p>
+            </section>
+            <section class="col-2 p-4 border-end">
+                <img src="assets/tech/6.jpg" height="150" class="d-block" alt="">
+                <p class="text-center">GoPro Cameras</p>
+                <p class="text-center"><span
+                        class="text-danger rounded-pill bg-danger-subtle ps-3 pe-3 fw-semibold">-40%</span></p>
+            </section>
+            <section class="col-auto p-4 border-end">
+                <img src="assets/tech/5.jpg" height="150" class="d-block" alt="">
+                <p class="text-center">Headphones</p>
+                <p class="text-center"><span
+                        class="text-danger rounded-pill bg-danger-subtle ps-3 pe-3 fw-semibold">-35%</span></p>
+            </section>
+            <section class="col-2 p-4">
+                <img src="assets/tech/3.jpg" height="150" class="d-block" alt="">
+                <p class="text-center">Canon Mobile phones</p>
+                <p class="text-center"><span
+                        class="text-danger rounded-pill bg-danger-subtle ps-3 pe-3 fw-semibold">-10%</span></p>
+            </section>
+        </section>
+    </section>
+
+    <!-- Home and outdoor section -->
+    <section class="container mt-4">
+        <section class="row border rounded-3 bg-white">
+            <section class="col-auto ps-0 pe-0">
+                <img src="assets/extra-images/home-decor.avif" class="card-img rounded-start" height="300" alt="">
+            </section>
+            <section class="col-auto">
+                <section class="row">
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Soft & Chair</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/1.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Ketchen mixes</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/9.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Soft & Chair</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/6.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Blenders</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/8.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Kitchen dishes</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/5.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Home appliance</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/7.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Smart watches</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/3.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">coffee maker</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/interior/4.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Electronic and Gadgets section -->
+    <section class="container mt-4">
+        <section class="row border rounded-3 bg-white">
+            <section class="col-auto ps-0 pe-0">
+                <img src="assets/extra-images/gadet.jpg" class="card-img rounded-start"
+                    style="height: 300px; width: 300px;" alt="">
+            </section>
+            <section class="col-auto">
+                <section class="row">
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Smart Watches</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/8.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Gaming set</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/5.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Cameras</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/6.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Laptops & PC</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/7.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column border-end">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Headphone</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/9.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Smartphone</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/2.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col-auto p-3 d-flex flex-column">
+                        <section class="d-flex border-bottom pb-4">
+                            <section class="me-4">
+                                <p class="m-0">Electic kattle</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/10.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                        <section class="d-flex mt-3">
+                            <section class="me-4">
+                                <p class="m-0">Smart Phone</p>
+                                <p class="text-secondary ">From <span class="d-block" style="font-size: .8rem;">USD
+                                        19</span></p>
+                            </section>
+                            <section class="mt-4">
+                                <img src="assets/tech/1.jpg" height="90" alt="">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- request to supplier -->
+    <section class="container mt-4 rounded-3"
+        style="background: linear-gradient(to right, rgb(148, 148, 255), rgb(163, 163, 255));">
+        <section class="row">
+            <section class="col p-5">
+                <section class="row justify-content-between">
+                    <section class="col-5 text-white ps-0">
+                        <h2>An easy way to send <span class="d-block">request to all suppliers</span></h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam quibusdam facilis
+                            dolorem dolores inventore amet vero </p>
+                    </section>
+                    <section class="col-4 pe-0">
+                        <form class="form-control  p-3">
+                            <h3>Send quotes to suppliers</h3>
+                            <input class="form-control mb-3" type="text" placeholder="What items you need?">
+                            <textarea class="form-control mb-3" cols="30" rows="3"
+                                placeholder="Type more detail here"></textarea>
+                            <section class="row g-3 mb-3">
+                                <section class="col-auto"><input type="text" class="form-control"
+                                        placeholder="Quantity"></section>
+                                <section class="col-auto">
+                                    <select class="form-control" name="" id="">
+                                        <option value="">Pcs</option>
+                                    </select>
+                                </section>
+                            </section>
+                            <button class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Recommand Section -->
+    <section class="container mt-4">
+        <section class="row mb-3">
+            <h3>Recommand items</h3>
+        </section>
+        <section class="row  justify-content-center">
+            <section class="col-2 ps-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/cloth/1.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$40.00</h5>
+                        <p class="card-text fs-6 text-secondary">T-shirt with multiple color <span>for men</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 ps-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/tech/5.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$40.00</h5>
+                        <p class="card-text fs-6 text-secondary">T-shirt with multiple color <span>for men</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2">
+                <section class="card h-100" style="max-width: 250px">
+                    <img src="assets/cloth/3.jpg" class="card-img-top" height="238" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$35.30</h5>
+                        <p class="card-text fs-6 text-secondary">Brown winter coast <span class="d-block">medium
+                                size</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/cloth/7.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$20.30</h5>
+                        <p class="card-text fs-6 text-secondary">Jeans short for men <span class="d-block">blue
+                                color</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <section class="card h-100" style="max-width: 250px">
+                    <img src="assets/cloth/6.jpg" class="card-img-top" height="238" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$30.00</h5>
+                        <p class="card-text fs-6 text-secondary">Jeans bag for men <span class="d-block">for
+                                travel</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 pe-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/cloth/5.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$10.30</h5>
+                        <p class="card-text fs-6 text-secondary">Leather wallet</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="row mt-3 justify-content-center">
+            <section class="col-2 ps-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/cloth/4.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$40.00</h5>
+                        <p class="card-text fs-6 text-secondary">Canon camera black, <span class="d-block">100x
+                                zoom</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2">
+                <section class="card h-100" style="max-width: 250px">
+                    <img src="assets/tech/9.jpg" class="card-img-top" height="238" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$35.30</h5>
+                        <p class="card-text fs-6 text-secondary">Headset for gaming <span class="d-block">with
+                                mic</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/cloth/5.jpg" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$20.30</h5>
+                        <p class="card-text fs-6 text-secondary">Smart watch silver <span class="d-block">color
+                                modern</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2">
+                <section class="card h-100" style="max-width: 250px">
+                    <img src="assets/interior/3.jpg" class="card-img-top" height="238" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$30.00</h5>
+                        <p class="card-text fs-6 text-secondary">Blue wallet for men <span class="d-block">leather
+                                material</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 pe-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/tech/10.jpg" height="238" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$10.30</h5>
+                        <p class="card-text fs-6 text-secondary">Jeans bag for travel <span class="d-block">for
+                                men</span></p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 pe-0">
+                <section class="card h-100" style="max-width: 240px">
+                    <img src="assets/tech/1.jpg" height="238" class="card-img-top" alt="Product Image">
+                    <section class="card-body">
+                        <h5 class="card-title fs-6">$10.30</h5>
+                        <p class="card-text fs-6 text-secondary">Jeans bag for travel <span class="d-block">for
+                                men</span></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Extra Service Section-->
+    <section class="container mt-4">
+        <section class="row mb-3">
+            <h3>Our Extra Services</h3>
+        </section>
+        <section class="row">
+            <section class="col-3 ps-0">
+                <section class="card" style="max-width: 350px;">
+                    <img src="assets/extra-images/factory.png" height="180" class="card-img-top" alt="Product Image">
+                    <h5 class="card-title m-2">Source from <span class="d-block">Industry Hubs</span></h5>
+                </section>
+            </section>
+            <section class="col-3">
+                <section class="card" style="max-width: 350px;">
+                    <img src="assets/extra-images/raibow-stripes.jpg" height="180" class="card-img-top"
+                        alt="Product Image">
+                    <h5 class="card-title m-2">Customize your <span class="d-block">Products</span></h5>
+                </section>
+            </section>
+            <section class="col-3">
+                <section class="card" style="max-width: 350px;">
+                    <img src="assets/extra-images/plane-sky.jpg" height="180" class="card-img-top" alt="Product Image">
+                    <h5 class="card-title m-2 ">Fast reliable shipping <span class="d-block">by ocean or air</span></h5>
+                </section>
+            </section>
+            <section class="col-3 pe-0">
+                <section class="card" style="max-width: 350px;">
+                    <img src="assets/extra-images/monitor.jpg" height="180" class="card-img-top" alt="Product Image">
+                    <h5 class="card-title m-2">Product monitoring <span class="d-block">and inspection</span></h5>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- supplier by region -->
+    <section class="container mt-4 mb-4">
+        <section class="row mb-3">
+            <h3>Suppliers by region</h3>
+        </section>
+        <section class="row">
+            <section class="col-2 me-3 ps-0">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=AE.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Arabic Emirates</h6>
+                        <small>shopname.ae</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=AU.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Australia</h6>
+                        <small>shopname.au</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=US.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">United State</h6>
+                        <small>shopname.us</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=RU.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Russia</h6>
+                        <small>shopname.ru</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=IT.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Italy</h6>
+                        <small>shopname.it</small>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="row">
+            <section class="col-2 ps-0 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=DK.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Denmark</h6>
+                        <small>shopname.dk</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=FR.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">France</h6>
+                        <small>shopname.fr</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=AE.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">Arabic Emirates</h6>
+                        <small>shopname.ae</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=CN.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">China</h6>
+                        <small>shopname.cn</small>
+                    </section>
+                </section>
+            </section>
+            <section class="col-2 me-3">
+                <section class="d-flex align-items-center mt-3">
+                    <img src="assets/flags/Property 1=UK.png" height="30" class="me-3">
+                    <section>
+                        <h6 class="mb-0">United Kingdom</h6>
+                        <small>shopname.uk</small>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <form class="row g-3 d-flex flex-column align-items-center mt-3 pt-4 pb-5" style="background-color: #c9d4cb;">
+            <div class="col-auto text-center">
+                <h4 class="h4 mb-0">Subscribe on our news letter</h4>
+                <p class="fw-semibold text-secondary mt-1 mb-0">Get daily news on upcoming offer from many
+                    supplier all
+                    over the world</p>
+            </div>
+            <div class="col-auto d-flex">
+                <input type="email" style="width: 250px;" class="form-control" placeholder="Email">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
+                </div>
+            </div>
+
+        </form>
+
+        </section>
+        <section class="foot-links bg-white" style="list-style: none;">
+            <section class="container d-flex justify-content-between pt-5 pb-5 fw-semibold">
+                <div class="foot-social-sec text-secondary" style="width: 300px;">
+                    <h3 class="text-primary"><i class="fa-solid fa-bag-shopping"></i> BRAND</h3>
+                    <p>Best information about the company is we offer loyalty</p>
+                    <div class="social-icon fs-4">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>About</p>
+                    <li class="text-secondary">About us</li>
+                    <li class="text-secondary">Find store</li>
+                    <li class="text-secondary">Categories</li>
+                    <li class="text-secondary">Blog</li>
+                </div>
+                <div>
+                    <p>Partnership</p>
+                    <li class="text-secondary">About us</li>
+                    <li class="text-secondary">Find store</li>
+                    <li class="text-secondary">Categories</li>
+                    <li class="text-secondary">Blog</li>
+                </div>
+                <div>
+                    <p>Information</p>
+                    <li class="text-secondary">Help Center</li>
+                    <li class="text-secondary">Money refund</li>
+                    <li class="text-secondary">Shipping</li>
+                    <li class="text-secondary">Contact us</li>
+                </div>
+                <div>
+                    <p>For users</p>
+                    <li class="text-secondary">Login</li>
+                    <li class="text-secondary">Register</li>
+                    <li class="text-secondary">Setting</li>
+                    <li class="text-secondary">My orders</li>
+                </div>
+                <div>
+                    <p>Get apps</p>
+                    <button class="btn btn-dark"><span class="d-block" style="font-size: .6rem;">Download on the
+                        </span><i class="fa-brands fa-apple"></i> App Store</button>
+                    <button class="btn btn-dark"><span class="d-block" style="font-size: .6rem;">Get it on
+                        </span><i class="fa-brands fa-google-play"></i> Google Play</button>
+                </div>
+            </section>
+        </section>
+        <section class="foot-end border-top pt-3 pb-3" style="background-color: #f1f8f3;">
+            <section class="container d-flex justify-content-between fw-semibold">
+                <p>© 2026 E-Commerce. All rights reserved.</p>
+                <p class="dropdown-toggle">English</p>
+            </section>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let myCart = document.getElementById("myCart");
+
+        myCart.addEventListener("click", (e) => {
+            window.open("web-cart.html");
+        })
+    </script>
+</body>
+
+</html>

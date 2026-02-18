@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Web-Listview</title>
+</head>
+
+<body style="background-color: #e6f0e8;">
+    <!-- Header section -->
+    <section class="border-bottom pt-3 pb-3 bg-white">
+        <header class="container">
+            <section class="row">
+                <section class="col-2">
+                    <section class="web-icon text-primary">
+                        <h2 class="h2"><i class="fa-solid fa-bag-shopping"></i> BRAND</h2>
+                    </section>
+                </section>
+                <section class="col-7">
+                    <section class="search-sec">
+                        <div class="input-group border border-primary border-2 rounded-3">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Search">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">All
+                                category</button>
+                            <button class="btn btn-primary">Search</button>
+                        </div>
+                    </section>
+                </section>
+                <section class="col-3">
+                    <section class="head-nav d-flex justify-content-end gap-3 text-secondary">
+                        <div class="icons d-flex flex-column justify-content-center align-items-center "><i
+                                class="fa-solid fa-user icon"></i>Profile
+                        </div>
+                        <div class="icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-message icon"></i>Messages</div>
+                        <div class="icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-heart icon"></i>Order
+                        </div>
+                        <div class="icons d-flex flex-column justify-content-center align-items-center"><i
+                                class="fa-solid fa-cart-shopping icon"></i>My Cart
+                        </div>
+                    </section>
+
+                </section>
+            </section>
+        </header>
+    </section>
+    <nav class="border-bottom pt-3 bg-white">
+        <section class="container d-flex justify-content-between fw-semibold">
+            <section class="nav container gap-4">
+                <p><i class="fa-solid fa-bars"></i> All category</p>
+                <a href="#" class="text-decoration-none text-black">Hot offers</a>
+                <a href="#" class="text-decoration-none text-black">Gift boxes</a>
+                <a href="#" class="text-decoration-none text-black">Projects</a>
+                <a href="#" class="text-decoration-none text-black">Menu items</a>
+                <p class="dropdown-toggle">Help</p>
+            </section>
+            <section class="d-flex gap-4">
+                <p class="dropdown-toggle">English, USD</p>
+                <p class="dropdown-toggle">Ship to GM</p>
+            </section>
+        </section>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="container mt-3 mb-3">
+        <ul class="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Clothings</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Men's wear</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Summer Clothing</a></li>
+        </ul>
+    </section>
+
+    <!-- product listview -->
+    <section class="container mt-3 mb-3">
+        <section class="row">
+            <aside class="col-2 pt-2 pb-2 border-top">
+                <p class="mb-0 fw-semibold d-flex justify-content-between">Category <i class="fa-solid fa-angle-down"></i></p>
+                <ul class="p-0">
+                    <li class="list-group-item p-1 ps-0"><a href="#" class="text-decoration-none text-secondary">Mobile
+                            accessory</a></li>
+                    <li class="list-group-item p-1 ps-0"><a href="#"
+                            class="text-decoration-none text-secondary">Electronics</a></li>
+                    <li class="list-group-item p-1 ps-0"><a href="#"
+                            class="text-decoration-none text-secondary">Smartphones</a></li>
+                    <li class="list-group-item p-1 ps-0"><a href="#" class="text-decoration-none text-secondary">Modern
+                            tech</a></li>
+                    <li class="list-group-item p-1 ps-0"><a href="#" class="text-decoration-none">See all</a></li>
+                </ul>
+                <section class="pt-2 mb-2 border-top">
+                    <p class="m-0 fw-semibold d-flex justify-content-between">Brands <i class="fa-solid fa-angle-down"></i></p>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Samsung</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Apple</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Huawei</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Pocco</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Lenovo</label>
+                    </section>
+                </section>
+                <section class="pt-2 mb-2 border-top">
+                    <p class="m-0 fw-semibold d-flex justify-content-between">Features <i class="fa-solid fa-angle-down"></i></p>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Metallic</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Plastic cover</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>8GB RAM</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Super Power</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Large Memory</label>
+                    </section>
+                    <p class="m-0 mt-2"><a href="#" class="text-decoration-none">See all</a></p>
+                </section>
+                <section class="pt-2 mb-2 border-top">
+                    <p class="m-0 fw-semibold d-flex justify-content-between">Price Range <i class="fa-solid fa-angle-down"></i></p>
+                    <section class="mt-2">
+                        <input type="range" class="form-range">
+                    </section>
+                    <section class="mt-2 row">
+                        <section class="col-6">
+                            <label>Min</label><input type="text" class="form-control" placeholder="0">
+                        </section>
+                        <section class="col-6">
+                            <label>Max</label><input type="text" class="form-control" placeholder="99999">
+                        </section>
+                    </section>
+                    <section class="mt-2">
+                        <input type="button" class="form-control text-primary" value="Apply">
+                    </section>
+                </section>
+                <section class="pt-2 mb-2 border-top">
+                    <p class="m-0 fw-semibold d-flex justify-content-between">Condition <i class="fa-solid fa-angle-down"></i></p>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Any</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Refurbished</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Brand New</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label>Old Items</label>
+                    </section>
+                </section>
+                <section class="pt-2 mb-2 border-top">
+                    <p class="m-0 fw-semibold d-flex justify-content-between">Rating <i class="fa-solid fa-angle-down"></i></p>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label class="text-warning">★★★★★</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label><span class="text-warning">★★★★</span>★</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label><span class="text-warning">★★★</span>★★</label>
+                    </section>
+                    <section class="mt-2">
+                        <input type="checkbox">
+                        <label><span class="text-warning">★★</span>★★★</label>
+                    </section>
+                </section>
+            </aside>
+
+            <!-- Content Top -->
+            <section class="col-10">
+                <section class="row justify-content-between pt-2 pb-2 m-0 mb-2 border rounded-3 bg-white">
+                    <section class="col-4 d-flex align-items-center">
+                        <p class="m-0">12,911 items in <span class="fw-semibold">mobile accessories</span></p>
+                    </section>
+                    <section class="col-5 d-flex align-items-center justify-content-end">
+                        <input type="checkbox">
+                        <label class="ms-2 me-2">Verified Only</label>
+                        <section class="">
+                            <select class="form-select">
+                                <option>Featured</option>
+                            </select>
+                        </section>
+                        <button class="btn border ms-2"><i class="fa-brands fa-microsoft"></i></button>
+                        <button class="btn border ms-2"><i class="fa-solid fa-bars"></i></button>
+                    </section>
+                </section>
+
+                <!-- Content -->
+                <section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/1.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/2.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/3.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/7.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/8.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+                <section class="card mb-3">
+                    <section class="row m-0">
+                        <section class="col-md-2">
+                            <img src="assets/tech/9.jpg" class="img-fluid rounded-start" alt="">
+                        </section>
+                        <section class="col-md-8">
+                            <section class="card-body">
+                                <p class="card-title fw-semibold">Canon Camera EOS 2000, 10x zoom</p>
+                                <h5 class="card-title mb-0">$998.00 <small
+                                        class="text-secondary text-decoration-line-through fs-6">$1128.00</small>
+                                </h5>
+                                <label class="mb-1"><small><span class="text-warning">★★★★</span>★ <span
+                                            class="text-warning"> 7.5</span><span class="text-secondary"> · 154
+                                            order ·</span><span class="text-success"> Free
+                                            Shipping</span></small></label>
+                                <p class="mb-0 card-text text-secondary"><small>Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit.
+                                        Provident, in suscipit officia accusantium ad commodi, labore unde ab
+                                        tempora
+                                        deleniti minima ea quia ex nulla.
+                                    </small></p>
+                                <p class="card-text"><small><a class="text-decoration-none" href="#">View
+                                            details</a></small></p>
+                            </section>
+                        </section>
+                        <section class="col-2 d-flex align-items-start justify-content-end pt-3">
+                            <button class="btn border text-primary"><i class="fa-regular fa-heart"></i></button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row justify-content-end pe-0">
+                <ul class="col-auto pagination pe-0">
+                    <select class="form-select me-2">
+                        <option>Show 10</option>
+                    </select>
+                    <li class="page-item"><a class="page-link" href="#"><</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                    
+                </ul>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <form class="row g-3 d-flex flex-column align-items-center mt-3 pt-4 pb-5" style="background-color: #c8d3ca;">
+            <div class="col-auto text-center">
+                <h4 class="h4 mb-0">Subscribe on our news letter</h4>
+                <p class="fw-semibold text-secondary mt-1 mb-0">Get daily news on upcoming offer from many
+                    supplier all
+                    over the world</p>
+            </div>
+            <div class="col-auto d-flex">
+                <input type="email" style="width: 250px;" class="form-control" placeholder="Email">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
+                </div>
+            </div>
+        </form>
+
+        <section class="foot-links bg-white" style="list-style: none;">
+            <section class="container d-flex justify-content-between pt-5 pb-5 fw-semibold">
+                <div class="foot-social-sec text-secondary" style="width: 300px;">
+                    <h3 class="text-primary"><i class="fa-solid fa-bag-shopping"></i> BRAND</h3>
+                    <p>Best information about the company is we offer loyalty</p>
+                    <div class="social-icon fs-4">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>About</p>
+                    <li class="text-secondary">About us</li>
+                    <li class="text-secondary">Find store</li>
+                    <li class="text-secondary">Categories</li>
+                    <li class="text-secondary">Blog</li>
+                </div>
+                <div>
+                    <p>Partnership</p>
+                    <li class="text-secondary">About us</li>
+                    <li class="text-secondary">Find store</li>
+                    <li class="text-secondary">Categories</li>
+                    <li class="text-secondary">Blog</li>
+                </div>
+                <div>
+                    <p>Information</p>
+                    <li class="text-secondary">Help Center</li>
+                    <li class="text-secondary">Money refund</li>
+                    <li class="text-secondary">Shipping</li>
+                    <li class="text-secondary">Contact us</li>
+                </div>
+                <div>
+                    <p>For users</p>
+                    <li class="text-secondary">Login</li>
+                    <li class="text-secondary">Register</li>
+                    <li class="text-secondary">Setting</li>
+                    <li class="text-secondary">My orders</li>
+                </div>
+                <div>
+                    <p>Get apps</p>
+                    <button class="btn btn-dark"><span class="d-block" style="font-size: .6rem;">Download on the
+                        </span><i class="fa-brands fa-apple"></i> App Store</button>
+                    <button class="btn btn-dark"><span class="d-block" style="font-size: .6rem;">Get it on
+                        </span><i class="fa-brands fa-google-play"></i> Google Play</button>
+                </div>
+            </section>
+        </section>
+        <section class="foot-end border-top pt-3 pb-3" style="background-color: #f1f8f3;">
+            <section class="container d-flex justify-content-between fw-semibold">
+                <p class="mb-0">© 2026 E-Commerce. All rights reserved.</p>
+                <p class="dropdown-toggle mb-0">English</p>
+            </section>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
